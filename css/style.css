@@ -298,3 +298,79 @@ footer {
 footer p {
   margin: 0 auto;
 }
+
+/* ==========================================================
+   10. LAYOUT COMPONENTS (mobile-first defaults)
+   ========================================================== */
+body {
+  overflow-wrap: break-word;   /* long words/URLs never force sideways scroll */
+}
+
+/* Flexbox: header items flow in ONE direction */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* Grid: hero text + image, single column on small screens */
+.hero {
+  display: grid;
+  gap: var(--space-5);
+}
+
+/* Grid: cards whose rows and columns must align together */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* ==========================================================
+   11. MEDIA QUERIES (breakpoints set where content breaks)
+   ========================================================== */
+
+/* ~40em: the logo and all nav links now fit on one line,
+   and cards are wide enough to sit two across */
+@media (min-width: 40em) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ~64em: enough room for hero text beside its image,
+   and three cards across without lines getting too short */
+@media (min-width: 64em) {
+  header,
+  footer {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  main {
+    padding: var(--space-6);
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: calc(var(--text-2xl) * 1.25);
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
