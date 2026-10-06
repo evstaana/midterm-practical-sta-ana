@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baybay Cleanup | Manila Bay Coastal Cleanup 2026</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <p class="logo"><a href="index.html">Baybay Cleanup</a></p>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#bring">What to bring</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#signup">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Help clear Manila Bay's shoreline on November 14</h1>
+        <p>Join students and neighbours for one morning of coastal cleanup along the Manila Bay baywalk. No experience needed: we provide sacks, gloves, and a team leader for every group.</p>
+        <a class="button" href="#signup">Sign up to volunteer</a>
+      </div>
+      <img src="assets/bay-sunrise.svg" alt="Illustration of Manila Bay at sunrise, with mangroves on the left shore and the city skyline across the water">
+    </section>
+
+    <section id="about">
+      <h2>Why we clean the bay</h2>
+      <p>Every rainy season, plastic from streets and waterways washes up on the bay's edge. Bottles, sachets, and bags tangle in the mangroves and break down into pieces small enough for fish to eat.</p>
+      <p>Baybay Cleanup is a student-run volunteer drive. Everything we collect is sorted, weighed, and handed to the city's recycling partners, and the totals are shared with everyone who joined.</p>
+      <figure>
+        <img src="assets/collected-trash.svg" alt="Illustration of three filled trash sacks and a pile of plastic bottles collected on the sand beside the water">
+        <figcaption>Last year's volunteers filled over 300 sacks in a single morning.</figcaption>
+      </figure>
+    </section>
+
+    <section id="bring">
+      <h2>What to bring</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Wear</h3>
+          <p>Closed shoes you can get wet, a hat, and light clothes that cover your arms.</p>
+        </article>
+        <article class="card">
+          <h3>Bring</h3>
+          <p>A refillable water bottle, sunscreen, and a small towel. We'll have water refill stations.</p>
+        </article>
+        <article class="card">
+          <h3>Leave at home</h3>
+          <p>Single-use plastic bottles and anything valuable you don't want to carry on the sand.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2>Event schedule</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Schedule for Saturday, 14 November 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">6:00 AM</th>
+              <td>Registration and assignment to groups</td>
+              <td>Baywalk entrance, Roxas Boulevard</td>
+            </tr>
+            <tr>
+              <th scope="row">6:30 AM</th>
+              <td>Safety briefing</td>
+              <td>Baywalk entrance</td>
+            </tr>
+            <tr>
+              <th scope="row">7:00 AM</th>
+              <td>Shoreline cleanup</td>
+              <td>Assigned shoreline zones</td>
+            </tr>
+            <tr>
+              <th scope="row">9:30 AM</th>
+              <td>Sorting and weighing</td>
+              <td>Collection tent</td>
+            </tr>
+            <tr>
+              <th scope="row">10:30 AM</th>
+              <td>Closing and group photo</td>
+              <td>Baywalk entrance</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="signup">
+      <h2>Volunteer sign-up</h2>
+      <p>Fields marked "required" must be filled in. We'll email your group assignment a week before the event.</p>
+      <form action="#" method="post">
+        <label for="name">Full name (required)</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+
+        <label for="email">Email (required)</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="phone">Mobile number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel">
+
+        <label for="group-size">Number of people in your group (required)</label>
+        <input type="number" id="group-size" name="group-size" min="1" max="10" value="1" required>
+
+        <label for="zone">Preferred zone (required)</label>
+        <select id="zone" name="zone" required>
+          <option value="">Choose a zone</option>
+          <option value="mangroves">Mangrove edge</option>
+          <option value="baywalk">Baywalk shoreline</option>
+          <option value="sorting">Sorting tent (no wading)</option>
+        </select>
+
+        <label for="notes">Anything we should know?</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <button type="submit">Sign up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Baybay Cleanup is a student volunteer project. Questions? Email <a href="mailto:baybay.cleanup@example.com">baybay.cleanup@example.com</a>.</p>
+  </footer>
+
+</body>
+</html>
